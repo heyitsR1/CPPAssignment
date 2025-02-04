@@ -1,0 +1,27 @@
+#include <iostream>
+using std::cin;
+using std::cout;
+using std::string;
+
+class Employee {
+private: 
+    string name;
+    int id;
+    float salary;
+public: 
+    Employee (string n, int id, float s) {
+        this ->name = n;
+        this ->id = id;
+        this ->salary = s;
+    }
+    float calculateSalary(float effectiveness){
+        if (effectiveness >= 0.7) {
+            salary = 1.5*salary;
+        }
+        return salary;
+    }
+};
+int main () {
+    Employee Aarohan(r1,559,696969.69);
+    cout << "Revised Salary is " << Aarohan.calculateSalary(0.7);
+}

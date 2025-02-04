@@ -1,0 +1,21 @@
+#include <iostream>
+using std:: cin; //scope resolution operator
+using std:: cout;
+using std::string; 
+
+class BankAccount {
+    private: //default
+        string name {};
+        float balance {0};
+
+    public:
+        //BankAccount () = default // default construction
+        BankAccount(string n,float b) {
+            this ->name = n;
+            this ->balance = b;
+        }
+};
+int  main () {
+    BankAccount rohan_account("Rohan",1000);
+
+}
