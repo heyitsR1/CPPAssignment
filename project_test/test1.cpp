@@ -93,7 +93,7 @@ int main() {
     std::cout << "Enter your Anthropic API key: ";
     std::getline(std::cin, api_key);*/
     std::string api_key;
-    api_key = "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";
+    api_key = "no";
 
     Chatbot bot(api_key);
     std::string user_input;
